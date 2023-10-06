@@ -1,0 +1,13 @@
+
+spring:
+
+    datasource:
+        username: root
+        password: 123456
+        url: jdbc:mysql://localhost:3306/userschema?createDatabaseIfNotExist=true
+    jpa:
+        hibernate:
+            ddl-auto: update #create for drop previous data
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.MySQL8Dialect
